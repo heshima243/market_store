@@ -1,14 +1,14 @@
-import { ArrowBack } from '@mui/icons-material';
-import { CardOverflow } from '@mui/joy';
-import { Button } from '@mui/material';
-import Typography from '@mui/material/Typography'
-import PostCard from './PostCard';
 import { ChakraProvider } from "@chakra-ui/react";
-// import CardProduct from "./component/header/CardProduct";
-// import { Text } from "@chakra-ui/react";
 import Navbar from "./component/header/Navbar";
-import MapCard from "./component/header/MapCard";
-import Footer from './component/Footer'
+import Footer from "./component/footer/Footer";
+import "../src/component/css/App.css";
+import MapCard from "./component/Products/MapCard";
+import SearchBar from "./component/Products/searchbar/SearchBar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Result from "./component/Products/searchbar/Result";
+import Home from "./component/Home";
+import NofoundResult from "./component/Products/searchbar/NofoundResult";
+import { NotFound } from "./component/NotFound";
 
 
 function App() {
@@ -17,10 +17,14 @@ function App() {
       <ChakraProvider>
         <Navbar />
       </ChakraProvider>
-      <MapCard />
-      <Footer/>
-      
-     
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/result" element={<Result />} />
+        <Route path="/resultNotfound" element={<NofoundResult />} />
+        <Route path="*" element={<NotFound/>} />
+      </Routes>
+      <Footer />
     </>
   );
 }
