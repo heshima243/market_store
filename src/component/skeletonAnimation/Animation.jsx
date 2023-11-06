@@ -7,12 +7,12 @@ export default function Animation() {
       <Skeleton
         variant="rectangular"
         animation="wave"
-        width={350}
+        width={320}
         height={125}
       />
       {/* <Skeleton variant="circular" animation="wave" width={40} height={40} /> */}
-      <Skeleton variant="text" animation="wave" />
-      <Skeleton variant="text" animation="wave" />
+      <Skeleton variant="text"   width={320} animation="wave" />
+      <Skeleton variant="text"   width={320} animation="wave" />
     </Grid>
   );
 }
