@@ -7,7 +7,7 @@ export default function Animation() {
       <Skeleton
         variant="rectangular"
         animation="wave"
-        width={350}
+        width={300}
         height={125}
       />
       {/* <Skeleton variant="circular" animation="wave" width={40} height={40} /> */}
