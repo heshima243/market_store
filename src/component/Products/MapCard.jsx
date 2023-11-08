@@ -56,7 +56,7 @@ function MapCard() {
 
 
   return (
-    <Container sx={{ marginTop: "20px" }}>
+    <Container sx={{ marginTop: "70px" }}>
      <SearchBar setSearchTerm={setSearchTerm} searchTerm={searchTerm} handleSearch={handleSearch}/>
      
       {loading ? (

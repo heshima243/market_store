@@ -14,9 +14,9 @@ export default function Footer() {
         mx: "auto",
         padding: 3,
         display: "flex",
-        flexWrap:'wrap',
+        flexWrap: "wrap",
         justifyContent: "space-around",
-        marginTop:'20px'
+        marginTop: "20px",
       }}
     >
       <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -28,21 +28,21 @@ export default function Footer() {
           to="home"
           style={{ color: "white", margin: "0.5rem", cursor: "pointer" }}
         >
-          Home
+          Category
         </Link>
         <Link
           className="link"
           to="experience"
           style={{ color: "white", margin: "0.5rem", cursor: "pointer" }}
         >
-          Experience
+          Find Product
         </Link>
         <Link
           className="link"
           to="about"
           style={{ color: "white", margin: "0.5rem", cursor: "pointer" }}
         >
-          About
+          Contact
         </Link>
       </Box>
 
@@ -52,27 +52,30 @@ export default function Footer() {
         </Typography>
 
         <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
-          <GitHub sx={{ mr:2, color: "#fff" }} />
-          <Typography variant="body2" sx={{color:'white',my:1}} >
+          <GitHub sx={{ mr: 2, color: "#fff" }} />
+          <Typography variant="body2" sx={{ color: "white", my: 1 }}>
             Github
           </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
-          <Email sx={{ mr:2, color: "#fff" }} />
-          <Typography variant="body2" sx={{color:'white',my:1}} >
+          <Email sx={{ mr: 2, color: "#fff" }} />
+          <Typography variant="body2" sx={{ color: "white", my: 1 }}>
             Email
           </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
-          <LinkedIn sx={{ mr:2, color: "#fff" }} />
-          <Typography variant="body2" sx={{color:'white',my:1}} >
+          <LinkedIn sx={{ mr: 2, color: "#fff" }} />
+          <Typography variant="body2" sx={{ color: "white", my: 1 }}>
             Linkdin
           </Typography>
         </Box>
       </Box>
-      <Box> <Typography variant="h8" sx={{ color: "#fff" }}>
-        &copy; 2023 Heshima Lunyungu Julien.
-      </Typography></Box>
+
+      <Box>
+        <Typography variant="h8" sx={{ color: "#fff" }}>
+          &copy; 2023 Heshima Lunyungu Julien.
+        </Typography>
+      </Box>
     </Box>
   );
 }

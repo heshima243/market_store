@@ -31,6 +31,11 @@ export default function Navbar() {
   return (
     <Box>
       <Flex
+        as="header"
+        position="fixed"
+        top='0'
+        w="100%"
+        zIndex = { 9999 }
         bg={useColorModeValue("blue.600", "gray.800")}
         color={useColorModeValue("white", "white")}
         minH={"60px"}
@@ -119,7 +124,9 @@ const DesktopNav = () => {
 
   return (
     <Stack direction={"row"} spacing={4}>
-      <Link to='/' style={{fontWeight:'500'}}>Home</Link>
+      <Link to="/" style={{ fontWeight: "500" }}>
+        Home
+      </Link>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
